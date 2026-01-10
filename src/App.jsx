@@ -1,25 +1,24 @@
+import './App.css';
+import About from './components/About';
+import BackgroundVideo from './components/BackgroundVideo';
+import Blackhole from './components/BlackHole';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Project from './components/Project';
 
-import './App.css'
-import { Route, Routes } from 'react-router-dom'
-import Home from "./pages/Home"
-import Layout from './Layout'
-import Abouts from './pages/Abouts'
-import Project from './components/Project'
 function App() {
-
-
   return (
-    <>
-      <Routes>
-        <Route element={<Layout/>}>
-           <Route path="/" element={<Home/>}/>
-           <Route path="/About" element={<Abouts/>} />
-           <Route path="/project" element={<Project/>}/>
-           </Route>
-     
-      </Routes>
-    </>
-  )
+    <div className="relative min-h-screen bg-[#001f7c38] w-full h-full flex flex-col items-center ">
+      {/* Background videos */}
+      <BackgroundVideo />
+      <Blackhole />
+      {/* Content */}
+      <Header />
+      <Hero />
+      <About/>
+      <Project/>
+    </div>
+  );
 }
 
-export default App
+export default App;
