@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 import { openMenu, closeMenu } from "../animations/headerAnimation";
 import gsap from "gsap";
-
+import {NavLink} from "react-router-dom";
 export default function Header() {
   const headerRef = useRef(null);
   const menuRef = useRef(null);
@@ -26,7 +26,12 @@ export default function Header() {
     return () => ctx.revert();
   }, []);
 
-  const links = ["About", "Skills", "Projects", "Contact"];
+  const links = [
+     { name: "About", path: "#/about" },
+  { name: "Skills", path: "#/skills" },
+  { name: "Projects", path: "#/projects" },
+  { name: "Contact", path: "#/contact" },
+  ]
   const socials = [GithubIcon, LinkedinIcon, TwitterIcon];
 
   return (
@@ -43,9 +48,18 @@ export default function Header() {
         {/* Desktop Nav */}
         <ul className="hidden lg:flex gap-10 bg-[rgba(122,170,233,0.2)] px-10 py-3 rounded-full">
           {links.map((item) => (
-            <li key={item} className="cursor-pointer hover:text-indigo-300">
-              {item}
-            </li>
+           <li key={item.name}>
+      <NavLink
+        to={item.path}
+        className={({ isActive }) =>
+          `cursor-pointer transition  ${
+            isActive ? "text-white" : "hover:text-indigo-300"
+          }`
+        }
+      >
+        {item.name}
+      </NavLink>
+    </li>
           ))}
         </ul>
 
@@ -83,9 +97,18 @@ export default function Header() {
 
         <ul className="flex flex-col gap-6 text-2xl font-bold mt-10">
           {links.map((item) => (
-            <li key={item} className="hover:text-indigo-400 cursor-pointer">
-              {item}
-            </li>
+         <li key={item.name}>
+      <NavLink
+        to={item.path}
+        className={({ isActive }) =>
+          `cursor-pointer transition ${
+            isActive ? "text-indigo-400" : "hover:text-indigo-300"
+          }`
+        }
+      >
+        {item.name}
+      </NavLink>
+    </li>
           ))}
         </ul>
 

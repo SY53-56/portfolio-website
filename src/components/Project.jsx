@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import project1 from "../assets/video/project1.mp4";
+import project3 from "../assets/video/weather.mp4";
 import project2 from "../assets/video/project2.mp4"
-import project3 from "../assets/video/project3.mp4"
+import project1 from "../assets/video/movieBooking.mp4"
 
 import { projectAnimations } from "../animations/projectAnimation";
 
@@ -41,23 +41,25 @@ useEffect(()=>{
           {/* CONTENT */}
           <div className="content flex-1">
             <h1 className="text-3xl font-bold mb-6 max-w-[450px]">
-              Animated <span className="gradient">Gaming</span> Website
+              Animated <span className="gradient">Movie booking</span> Website
             </h1>
 
             <p className="text-lg text-gray-300 max-w-[400px] min-w-[300px] w-[90%] mb-10">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Dicta ipsam excepturi ex in corrupti similique dolor nam.
+           This is a Movie Booking Website built with React. Users can browse movies, view details, and book tickets. I am currently developing features and improving the user experience.
             </p>
 
-            <button className="flex items-center gap-2 px-4 py-2 border rounded-md 
-              bg-[#2200493d] cursor-pointer
-              hover:shadow-[0_0_15px_#72a1de81]
-              text-[#72a1de81] border-[#72a1de81]
-             transition-all duration-300">
-              
-              <i className="bx bx-link-external"></i>
-              Website
-            </button>
+          <button
+  onClick={() => window.open("https://github.com/SY53-56/QuickShow", "_blank")}
+  className="flex items-center gap-2 px-4 py-2 border rounded-md 
+             bg-[#2200493d] cursor-pointer
+             hover:shadow-[0_0_15px_#72a1de81]
+             text-[#72a1de81] border-[#72a1de81]
+             transition-all duration-300"
+>
+  <i className="bx bx-link-external"></i>
+  Website
+</button>
+
           </div>
 
         </div>
@@ -79,15 +81,15 @@ useEffect(()=>{
           {/* CONTENT */}
           <div className="content flex-1">
             <h1 className="text-3xl font-bold mb-6 max-w-[450px]">
-              Animated <span className="gradient">Gaming</span> Website
+              Animated <span className="gradient">Protfolio</span> Website
             </h1>
 
             <p className="text-lg text-gray-300 max-w-[400px] min-w-[300px] w-[90%] mb-10">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Dicta ipsam excepturi ex in corrupti similique dolor nam.
+               This is my personal portfolio website built using React. 
+  It showcases my projects, skills, and contact information with a modern and responsive design.
             </p>
 
-            <button className="flex items-center gap-2 px-4 py-2 border rounded-md 
+            <button onClick={()=>window.open("https://react-weather-app-liart-theta.vercel.app/")} className="flex items-center gap-2 px-4 py-2 border rounded-md 
               bg-[#2200493d] cursor-pointer
               hover:shadow-[0_0_15px_#72a1de81]
               text-[#72a1de81] border-[#72a1de81]
@@ -117,12 +119,12 @@ useEffect(()=>{
           {/* CONTENT */}
           <div className="content flex-1">
             <h1 className="text-3xl font-bold mb-6 max-w-[450px]">
-              Animated <span className="gradient">Gaming</span> Website
+              simple <span className="gradient">Weather</span> Website
             </h1>
 
             <p className="text-lg text-gray-300 max-w-[400px] min-w-[300px] w-[90%] mb-10">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Dicta ipsam excepturi ex in corrupti similique dolor nam.
+          A weather application built with React and OpenWeather API. 
+  Users can search any city and get real-time weather information along with forecasts.
             </p>
 
             <button className="flex items-center gap-2 px-4 py-2 border rounded-md 

@@ -2,6 +2,8 @@ import './App.css';
 import About from './components/About';
 import BackgroundVideo from './components/BackgroundVideo';
 import Blackhole from './components/BlackHole';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Project from './components/Project';
@@ -18,6 +20,8 @@ function App() {
       <About/>
       <Project/>
       <Skill/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }

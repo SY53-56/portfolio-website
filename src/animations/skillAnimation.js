@@ -34,6 +34,13 @@ export const skillAnimation = (skillRef) => {
       },
   })
 
+ gsap.to(".track",{
+    xPercent: -50,
+      duration: 20,
+      ease: "linear",
+      repeat: -1,
+
+ }) 
 
 
   }, skillRef)
