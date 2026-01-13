@@ -34,7 +34,7 @@ useEffect(()=>{
               playsInline
               className="w-full h-full object-cover"
             >
-              <source src={project1} type="video/mp4" />
+              <source src={project1} type="video/webm" />
             </video>
           </div>
 
@@ -74,7 +74,7 @@ useEffect(()=>{
               playsInline
               className="w-full h-full object-cover"
             >
-              <source src={project2} type="video/mp4" />
+              <source src={project2} type="video/webm" />
             </video>
           </div>
 
@@ -112,7 +112,7 @@ useEffect(()=>{
               playsInline
               className="w-full h-full object-cover"
             >
-              <source src={project3} type="video/mp4" />
+              <source src={project3} type="video/webm" />
             </video>
           </div>
 

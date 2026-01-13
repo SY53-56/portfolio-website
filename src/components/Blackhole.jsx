@@ -25,7 +25,7 @@ export default function BlackHole() {
         playsInline
         className="w-full h-full mt-[-23%] "
       >
-        <source src={blackhole} type="video/mp4" />
+        <source src={blackhole} type="video/webm" />
       </video>
     </div>
   );
