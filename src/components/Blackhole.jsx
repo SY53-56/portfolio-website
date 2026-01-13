@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import blackhole from "../assets/video/blackhole.mp4";
+import blackhole from "../../public/blackhole.webm"
 import gsap from "gsap";
 export default function BlackHole() {
   const videoRef = useRef(null)

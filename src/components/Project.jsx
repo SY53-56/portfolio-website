@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import project3 from "../assets/video/weather.mp4";
-import project2 from "../assets/video/project2.mp4"
-import project1 from "../assets/video/movieBooking.mp4"
+import project1 from "../../public/movieBooking.webm";
+import project2 from "../../public/project2.webm"
+import project3 from "../../public/weather.webm"
 
 import { projectAnimation } from "../animations/projectAnimation";
 

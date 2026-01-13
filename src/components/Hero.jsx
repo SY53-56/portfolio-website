@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { ArrowRightIcon, DiamondIcon } from "lucide-react";
 import Button from "./Button";
-import HeroVideo from "../assets/video/hero-video.mp4";
+import HeroVideo from "../../public/hero-video.mp4"
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);

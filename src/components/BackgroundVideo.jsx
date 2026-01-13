@@ -1,5 +1,5 @@
 import React from "react";
-import galaxy from "../assets/video/galaxy.mp4";
+import galaxy from"../../public/galaxy.mp4"
 
 export default function BackgroundVideo() {
   return (

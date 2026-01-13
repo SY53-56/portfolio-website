@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import card1 from "../assets/images/grid1.png"
 import card2 from "../assets/images/grid2.png"
-import glob from "../assets/video/glob.mp4"
+import glob from "../../public/glob.webm"
 import card4 from "../assets/images/grid4.png"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from 'gsap'
