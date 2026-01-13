@@ -3,13 +3,13 @@ import project3 from "../assets/video/weather.mp4";
 import project2 from "../assets/video/project2.mp4"
 import project1 from "../assets/video/movieBooking.mp4"
 
-import { projectAnimations } from "../animations/projectAnimation";
+import { projectAnimation } from "../animations/projectAnimation";
 
 export default function Project() {
    let projectRef =useRef(null)
 
 useEffect(()=>{
-    const revertAnimations = projectAnimations(projectRef)
+    const revertAnimations = projectAnimation(projectRef)
      return () => revertAnimations();
 },[])
 

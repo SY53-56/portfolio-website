@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export const projectAnimations= (projectRef) => {
+export const projectAnimation= (projectRef) => {
   const ctx = gsap.context(() => {
     // Animate heading
     gsap.fromTo(
