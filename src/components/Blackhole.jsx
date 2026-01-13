@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import blackhole from "../assets/video/blackhole.mp4";
 import gsap from "gsap";
-export default function Blackhole() {
+export default function BlackHole() {
   const videoRef = useRef(null)
    useEffect(()=>{
       const ctx = gsap.context(()=>{
