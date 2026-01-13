@@ -127,7 +127,7 @@ useEffect(()=>{
   Users can search any city and get real-time weather information along with forecasts.
             </p>
 
-            <button className="flex items-center gap-2 px-4 py-2 border rounded-md 
+              <button onClick={()=>window.open("https://react-weather-app-liart-theta.vercel.app/")} className="flex items-center gap-2 px-4 py-2 border rounded-md 
               bg-[#2200493d] cursor-pointer
               hover:shadow-[0_0_15px_#72a1de81]
               text-[#72a1de81] border-[#72a1de81]
@@ -136,6 +136,8 @@ useEffect(()=>{
               <i className="bx bx-link-external"></i>
               Website
             </button>
+          </div>
+
           </div>
 
         </div>
