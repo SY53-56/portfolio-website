@@ -25,7 +25,7 @@ export default function Button({
   );
 
   if (to) {
-    return <Link to={to}>{content}</Link>;
+  return <a href={to}>{content}</a>
   }
 
   return content;

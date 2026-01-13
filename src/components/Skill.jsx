@@ -11,7 +11,7 @@ export default function Skill() {
    return ()=> removeAnimation ()
    },[])
   return (
-    <div ref={skillRef} className=' w-full relative px-4 lg:px-20 mt-60'>
+    <div id='Skill' ref={skillRef} className=' w-full relative px-4 lg:px-20 mt-60'>
       <h1 className='h1 text-4xl font-bold text-center text-white'>My Skills 💪</h1>
       <div className='skill w-full relative h-[90vh] mt-10 items-start mix-blend-lighten flex justify-center '>
             <div className='absolute top-40 left-20  flex flex-col items-start max-w-[300px] gap-4'>

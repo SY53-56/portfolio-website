@@ -42,7 +42,7 @@ useEffect(() => {
 
     return (
 
-        <div ref={showRef} className=' w-full '>
+        <div id='About' ref={showRef} className=' w-full '>
             <h1 className='hello text-6xl text-center text-white font-bold'>Hello,There👋</h1>
             <div className=' w-full h-full grid  grid-cols-1  md:grid-cols-2  lg:grid-cols-3  gap-6  px-3
                     lg:px-24

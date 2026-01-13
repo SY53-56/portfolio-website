@@ -14,7 +14,7 @@ useEffect(()=>{
 },[])
 
   return (
-    <div  ref={projectRef} className="w-full flex flex-col justify-center items-center text-white mt-54 px-10 transition-all duration-300">
+    <div id="Project"  ref={projectRef} className="w-full flex flex-col justify-center items-center text-white mt-54 px-10 transition-all duration-300">
       
       <h1 className="project1 text-4xl text-center font-bold">
         My Projects 👨‍💻

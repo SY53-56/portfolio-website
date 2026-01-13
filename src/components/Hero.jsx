@@ -41,7 +41,7 @@ export default function Hero() {
   }, []);
 
   return (
-   <div ref={heroRef} className="hero w-full   flex justify-between px-10 lg:px-20 ">
+   <div ref={heroRef} className="hero w-full   flex justify-between px-10 lg:px-20 mb-30 lg:mb-16">
       <div ref={contentRef} className="herop w-full lg:w-[45%] relative  flex flex-col  mt-50 lg:mt-2 items-start  justify-center gap-5">
                <div  className="border flex items-center gap-2 rounded-2xl px-3 py-1.5 
                         text-[#72a1de] 
@@ -56,10 +56,18 @@ export default function Hero() {
   Project <span className="gradient">Experience</span>
 </h1>
               <p className=" text-[18px] lg:text-[20px] w-full lg:max-w-[550px] mb-10 text-white">I'm a full stack developer with experience in Website, Mobile and Software development. Check out my projects and skills.</p>
-              <Button name="contact" className="bg-[#2200493d] border border-[#72a1de81]
+         <div className="flex gap-4">
+               <Button name="contact" className="bg-[#2200493d] border border-[#72a1de81]
                      shadow-[0_0_5px_#72a1de81]
                      hover:shadow-[0_0_15px_#72a1de81]
                      px-8 py-2 rounded-md text-white transition-all duration-300"/>
+                    
+
+                    <a href="../../public/Sahul_Kumar_Resume.pdf" target="_blank" className="bg-[#2200493d] border border-[#72a1de81]
+                     shadow-[0_0_5px_#72a1de81]
+                     hover:shadow-[0_0_15px_#72a1de81]
+                     px-8 py-2 rounded-md text-white transition-all duration-300">Resume View</a>
+         </div>
       </div>
       <div className=" w-[45%] hidden lg:flex">
  <video autoPlay

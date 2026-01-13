@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 import { openMenu, closeMenu } from "../animations/headerAnimation";
 import gsap from "gsap";
-import {NavLink} from "react-router-dom";
+
 export default function Header() {
   const headerRef = useRef(null);
   const menuRef = useRef(null);
@@ -27,12 +27,17 @@ export default function Header() {
   }, []);
 
   const links = [
-     { name: "About", path: "#/about" },
-  { name: "Skills", path: "#/skills" },
-  { name: "Projects", path: "#/projects" },
-  { name: "Contact", path: "#/contact" },
+     { name: "About", path: "#Ablot" },
+  { name: "Skills", path: "#Skill" },
+  { name: "Projects", path: "#Project" },
+  { name: "Contact", path: "#Contact" },
   ]
-  const socials = [GithubIcon, LinkedinIcon, TwitterIcon];
+ const socials = [
+  { icon: GithubIcon, path: "https://github.com/SY53-56" },
+  { icon: LinkedinIcon, path: "https://www.linkedin.com/in/sahul-yadav-067a88329/" },
+  { icon: TwitterIcon, path: "https://x.com/SahulYadav07" },
+];
+
 
   return (
     <header
@@ -48,32 +53,28 @@ export default function Header() {
         {/* Desktop Nav */}
         <ul className="hidden lg:flex gap-10 bg-[rgba(122,170,233,0.2)] px-10 py-3 rounded-full">
           {links.map((item) => (
-           <li key={item.name}>
-      <NavLink
-        to={item.path}
-        className={({ isActive }) =>
-          `cursor-pointer transition  ${
-            isActive ? "text-white" : "hover:text-indigo-300"
-          }`
-        }
-      >
-        {item.name}
-      </NavLink>
-    </li>
+         <a href={item.path} className="hover:text-indigo-300 transition">
+  {item.name}
+</a>
+
           ))}
         </ul>
 
         {/* Desktop Socials */}
-        <div className="hidden lg:flex gap-4">
-          {socials.map((Icon, i) => (
-            <button
-              key={i}
-              className="p-2 border border-slate-300 rounded-full hover:scale-110 transition"
-            >
-              <Icon size={18} />
-            </button>
-          ))}
-        </div>
+      <div className=" gap-4 hidden lg:flex">
+  {socials.map(({ icon: Icon, path }, i)=> (
+    <a
+      key={i}
+      href={path}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="p-2 border border-slate-300 rounded-full hover:scale-110 transition"
+    >
+      <Icon size={18} />
+    </a>
+  ))}
+</div>
+
 
         {/* Mobile Button */}
         <MenuIcon
@@ -97,31 +98,27 @@ export default function Header() {
 
         <ul className="flex flex-col gap-6 text-2xl font-bold mt-10">
           {links.map((item) => (
-         <li key={item.name}>
-      <NavLink
-        to={item.path}
-        className={({ isActive }) =>
-          `cursor-pointer transition ${
-            isActive ? "text-indigo-400" : "hover:text-indigo-300"
-          }`
-        }
-      >
-        {item.name}
-      </NavLink>
-    </li>
+       <a href={item.path} className="hover:text-indigo-300 transition">
+  {item.name}
+</a>
+
           ))}
         </ul>
 
-        <div className="flex gap-4 mt-10">
-          {socials.map((Icon, i) => (
-            <button
-              key={i}
-              className="p-2 border border-slate-300 rounded-full hover:scale-110 transition"
-            >
-              <Icon size={22} />
-            </button>
-          ))}
-        </div>
+      <div className="flex gap-4 mt-10">
+  {socials.map(({ icon: Icon, path }, i) => (
+    <a
+      key={i}
+      href={path}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="p-2 border border-slate-300 rounded-full hover:scale-110 transition"
+    >
+      <Icon size={18} />
+    </a>
+  ))}
+</div>
+
       </div>
     </header>
   );

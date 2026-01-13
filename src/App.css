@@ -23,6 +23,10 @@
   45%, 55% { filter: blur(0); opacity: 1; }
   100% { filter: blur(40px); opacity: 0; }
 }*/
+html {
+  scroll-behavior: smooth;
+}
+
 .gradient {
   background: linear-gradient(
     to right,
